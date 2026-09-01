@@ -10,7 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // 4. middleware  dasar
-app.use(cors); // mengizinkan  request dari domain lain (frontend)
+app.use(cors()); // mengizinkan  request dari domain lain (frontend)
 app.use(express.json()); // membaca body request bertipe JSON
 app.use(express.urlencoded({ extended: true })); // membaca body request bertipe form-data/url-encoded
 
