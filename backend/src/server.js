@@ -55,7 +55,7 @@ const profileRoutes = require('./routes/profileRoutes');
 const projectRoutes = require('./routes/projectRoutes');
 
 app.use('/api/profile', profileRoutes);
-app.use('/api/projects', projectRoutes)
+app.use('/api/projects', projectRoutes);
 
 // 6. Middleware untuk menangani route yang tidak ditemukan (404 Not Found)
 app.use((req, res) => {
